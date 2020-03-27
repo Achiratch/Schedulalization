@@ -20,12 +20,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-    <script src="" defer></script>
+    <link rel="stylesheet" type="text/css" href="color.css" />
+
+    <script src="link.js" defer></script>
     <style>
         body {
             font-family: 'Kanit';
             color: white;
-            background-color: rgb(255, 99, 71);
+            background-color: rgb(255, 102, 0);
         }
     </style>
 
@@ -33,45 +35,99 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand">
-                    <img src="" width="100px" height="35px" alt="Schedulalization">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul id="menu-primary" class="navbar-nav ml-auto">
-                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
-                            id="menu-item-64"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64 nav-item"><a
-                                title="Schedulalization" href="AddSchedule.html" class="nav-link">Schedulalization</a>
-                        </li>
-                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
-                            id="menu-item-64"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64 nav-item"><a
-                                title="My Schedule" href="Myschedule.html" class="nav-link">My Schedule</a></li>
-                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
-                            id="menu-item-390"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390 nav-item"><a
-                                title="Course" href="Course.html" class="nav-link">Course</a></li>
-
-                        <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement"
-                            id="menu-item-390"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390 nav-item ml-3">
-                            <span onclick=" relocate_profile()">
-                                <img width="35px" height="35px"
-                                    src="https://marvel-live.freetls.fastly.net/canvas/2019/3/50a3ff45d2e84675856184b26b09dcc8?quality=95&fake=.png"
-                                    alt="account">
-                            </span>
-                        </li>
-                    </ul>
-
-                </div>
+        <nav
+          class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar"
+        >
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                src="public/images/logo_black_2.png"
+                style="width:140px;"
+                alt="Schedulalization"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent-7"
+              aria-controls="navbarSupportedContent-7"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+              <ul id="menu-primary" class="navbar-nav ml-auto">
+                <li
+                  itemscope="itemscope"
+                  itemtype="https://www.schema.org/SiteNavigationElement"
+                  id="menu-item-64"
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64 nav-item"
+                >
+                  <a
+                    href="AddSchedule.html"
+                    title="Schedulalization"
+                    class="nav-link waves-effect"
+                  >
+                    <i class="fas fa-plus-circle"></i
+                    ><span class="d-none d-xl-inline-block ml-1"
+                      >Schedulalization</span
+                    >
+                  </a>
+                </li>
+  
+                <li
+                  itemscope="itemscope"
+                  itemtype="https://www.schema.org/SiteNavigationElement"
+                  id="menu-item-64"
+                  class="menu-item menu-item-type-custom menu-item-object-custom menu-item-64 nav-item"
+                >
+                  <a
+                    href="Myschedule.html"
+                    title="My Schedule"
+                    class="nav-link waves-effect"
+                  >
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="d-none d-xl-inline-block ml-1">My Schedule</span>
+                  </a>
+                </li>
+  
+                <li
+                  itemscope="itemscope"
+                  itemtype="https://www.schema.org/SiteNavigationElement"
+                  id="menu-item-390"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390 nav-item"
+                >
+                  <a
+                    href="Course.html"
+                    title="Course"
+                    class="nav-link waves-effect"
+                  >
+                    <i class="fas fa-book"></i>
+                    <span class="d-none d-xl-inline-block ml-1">Course</span>
+                  </a>
+                </li>
+                <li
+                  itemscope="itemscope"
+                  itemtype="https://www.schema.org/SiteNavigationElement"
+                  id="menu-item-390"
+                  class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390 nav-item"
+                >
+                  <a
+                    href="profile.html"
+                    title="Profile"
+                    class="nav-link waves-effect"
+                  >
+                    <i class="fas fa-user-circle fa-2x"></i>
+                    <span class="d-none d-xl-inline-block ml-1"></span>
+                  </a>
+                </li>
+              </ul>
             </div>
-        </nav><br>
-    </header>
+          </div>
+        </nav>
+      </header>
     <h2>
         <span onclick=" relocate_welcome()"><i class="fas fa-angle-left"></i> </span>
     </h2><br>
