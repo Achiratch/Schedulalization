@@ -1,33 +1,56 @@
 body {
-    background-image: url("https://mdbootstrap.com/img/Photos/Others/background.jpg");
+  background-image: url("https://mdbootstrap.com/img/Photos/Others/background.jpg");
 }
 
-html, body, header, .view {
-    height: 60%;
+html,
+body,
+header,
+.view {
+  height: 60%;
 }
 
 @media (max-width: 740px) {
-    html, body, header, .view {
-        height: 1000px;
-    }
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
-    html, body, header, .view {
-        height: 650px;
-    }
+  html,
+  body,
+  header,
+  .view {
+    height: 650px;
+  }
 }
 
 .top-nav-collapse {
-    background-color: #b5513f !important;
+  background-color: #ff961e !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 @media (max-width: 991px) {
-    .navbar:not(.top-nav-collapse) {
-        background: #b5513f !important;
-    }
+  .navbar:not(.top-nav-collapse) {
+    background: #b5513f !important;
+  }
+}
+
+.rgba-gradient {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(245, 151, 11, 0.4) 100%
+  );
+
+  background: linear-gradient(
+    to 45deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(144, 84, 15, 0.4) 100%
+  );
 }
